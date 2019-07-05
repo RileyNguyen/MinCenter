@@ -1,0 +1,119 @@
+$mau_xanh:#224687;
+$shadow:2px 2px 1px grey;
+$mau_xanh_nhat:#2ABFD4;
+$mau_vang:#FFC000;
+$mau_vang_nhat:#D8FF09;
+body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.header{
+    p{
+        display: inline-block;
+        width: 80%;
+        font-size: 30px;
+        color: $mau_xanh_nhat;
+        padding-left: 30px;
+    }
+    a{
+        text-decoration: none;
+        button{
+            color:white;
+            background-color: skyblue;
+            border:none;
+            width: 15%;
+            font-size: 20px;
+            height: 34px;
+            border-radius: 15px;
+        }
+    }
+    border-bottom: 1px solid grey;
+}
+.main{
+    overflow: hidden;
+    .list-question{
+        padding:50px;
+        table caption{
+            text-align: center;
+            font-size: 25px;
+        }
+        table tr td{
+            display: inline-block;
+            text-align: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            margin: 10px;
+            font-weight: bold;
+            background-color: $mau_xanh_nhat;
+            a{
+                padding-top:15px;
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                text-decoration: none;
+                color:white;
+            }
+        }
+        table tr td:hover{
+            background-color: $mau_vang_nhat;
+        }
+        float: left;
+        width: 30%;
+    }
+    .detail-question{
+        padding-left: 40px;
+        float: left;
+        width: 70%;
+        border-left: 1px solid black;
+        .answers{
+            border-top:1px solid black;
+            a{
+                padding: 10px;
+                text-decoration: none;
+                color:grey;
+                font-size:20px;
+                .selected{
+                    display: inline-block;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background-color:$mau_xanh;
+                    text-align: center;
+                    color: yellow;
+                    padding: 8px;
+                }
+                p{
+                    color:black;
+                }
+            }
+            
+            a:hover>.selected{
+                background-color: #2ABFD4;
+            }
+        }
+    }
+}
+@mixin footer($width,$text-ali) {
+    width: $width;
+    text-align: $text-ali;
+}
+.footer{
+    border-top: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    .left{
+        @include footer(30%,center);
+    }   
+    .time{
+        @include footer(30%,center);
+        #countdown-timer{
+            font-size: 30px;
+        }
+    }
+    .right{
+        @include footer(30%,center);
+    }
+}

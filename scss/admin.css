@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: medium-content-sans-serif-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: rgba(92, 92, 92, 0.84);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+td{width: auto;text-align: center;height: 50px;padding: 0 10px;/* border-bottom: 1px dashed white; */}
+a{text-decoration: none;}
+a:hover{text-decoration: none}
+input[type=submit]{width:70px;margin-left:10px;border-radius: 5px;outline: none;cursor:pointer;border: none;box-shadow: 0 2px 7px 2px rgba(0,0,0,0.7);height: 30px;}
+input[type=submit]:hover{background-color: tomato;}
+input[type=file]{width: 70px;outline: none;border: none;}
+#add_tieuchi{float: none;margin-top: 20px;margin-left: 10px;}
+button[type=reset]{width: 70px;height: 30px;border-radius: 5px;outline: none;cursor:pointer;border: none;box-shadow: 0 2px 7px 2px rgba(0,0,0,0.7);}
+button[type=reset]:hover{background-color: tomato;}
+#cke_editor1{width: 80%;}
+#dsgiaovien input{margin-bottom: 20px;vertical-align: middle;}
+a.chucnang{display: inline-block;width: 40px;height: 25px;border:1px solid white;padding: 1px;border-radius: 5px;color:black;}
+a.chucnang:hover{box-shadow: 0px 2px 5px 3px rgba(0,0,0,0.7);}
+.header {position: relative;background: #000;}
+.header .left {float: left;}
+.header .right {position: absolute;top: 20px;right: 30px;}
+
+/*.header .right button[type=submit] {
+  border: none;
+  border-radius: 3px;
+  background-color: #2ABFD4;
+  height: 30px;
+  width: 100px;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 100px;
+}*/
+
+/*.header .right ul {
+  display: none;
+}
+
+.header .right a img:hover > ul {
+  display: block;
+}*/
+
+/* .main form {
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}*/
+
+.main form input[type=text] {
+  display: block;
+  border: none;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+}
+
+.main form #tieu-de {
+  font-size: 30px;
+}
+
+.main form input[type=text]:active {
+  border: none;
+}
+.main{padding:30px 0;}
+.inner{width: 100%;margin: 0 auto;position: relative;}
+.clear{clear: both;display: block;}
+.right{color: #fff;}
+.left_main{width: 270px;float: left;border-right: 1px solid #fff;}
+.right_main{width: calc(100% - 300px);float: right;}
+/*tab_tieuchi_index*/
+.item_tab_baigiang{display:inline-block;padding: 0px 10px;color:#000;font-size: 12px;position:relative;}
+.item_tab_baigiang:hover,.item_tab_baigiang.active{width: 100%;background:#fff;border: 2px solid #2A3F54;padding: 0px 10px;color: #2A3F54;font-size: 13px;color: #f00;}
+.content_tab_baigiang{display:none;}
+.content_tab_baigiang.active{display:block;}
+.tab_baigiang{float: left;padding: 5px 0;margin-bottom: 10px;}
+.tab_baigiang a h2{border-bottom:none;font-size: 17px;}
+/*tab_tieuchi_admin*/
+.item_tab_admin{display:inline-block;padding: 0px 10px;color:#000;font-weight:bold;font-size: 12px;text-transform:capitalize;position:relative;border: 2px solid #e9e6be;border-radius: 25px;margin-right: 10px;}
+.item_tab_admin:hover,.item_tab_admin.active{background:#fff;border: 2px solid #2A3F54;padding: 0px 10px;color: #2A3F54;font-size: 13px;}
+.content_tab_admin{display:none;}
+.content_tab_admin.active{display:block;}
+.tab_admin{padding: 5px 0;margin-bottom: 10px;}
+.tab_admin a h2{border-bottom:none; }
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+/*
+/*show tiêu chí*/
+.stt_tc{width: 50px;float: left;}
+.ten_tc{width: 200px;float: left;}
+.mota_tc{width: 200px;float: left;}
+.noidung_tc{width: 350px;float: left;}
+.add{width: 50px;float: left;}
+.box_tieuchi{padding: 10px 0;}
+.noidung_tc p{margin:0!important;}
+.tab_admin a{text-decoration: none!important;}
+/*Danh mục cấp*/
+.stt_dmlv1{width: 50px;float: left;}
+.ten_dmlv1{width: 750px;float: left;}
+.stt_dmlv2{width: 50px;float: left;}
+.ten_dmlv2{width: 250px;float: left;}
+.mota_dmlv2{width: 500px;float: left;}
+.title_admin{text-align: center;margin-bottom: 30px;}
+.title_admin span{font-size: 20px;color: #ff0;}
+/*Giáo viên*/
+.ten_gv{width:200px;float: left;}
+.email_gv{width:150px;float: left;}
+.dienthoai_gv{width:150px;float: left;}
+.mota_gv{width:250px;float: left;}
+/*# sourceMappingURL=write.css.map */
+.header .inner .right{font-size: 20px;margin-top: 20px;}
+.right_main{color:white;}
+.right_main #tieuchi .wrap_tieuchi form .wrap_tieuchi input{border-radius:5px;outline: none;margin-bottom: 15px;width: 80%;}
+.right_main .content_tab_baigiang .wrap_tieuchi .content_tab_admin form .wrap_tieuchi input[type=text]{border-radius:5px;width:60%;}
+.right_main .content_tab_baigiang .wrap_tieuchi .content_tab_admin form .wrap_tieuchi label{display: inline-block;margin-bottom: 10px;}
+.right_main .content_tab_baigiang .wrap_tieuchi .content_tab_admin form .wrap_tieuchi select{margin-left:20px;width: 30%;height: 40px;border-radius: 5px;padding: 10px;}
+tr th{
+  display: table-cell;
+  vertical-align: inherit;
+  font-weight: bold;
+  text-align: center;}

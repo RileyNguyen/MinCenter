@@ -1,0 +1,102 @@
+$mau_xanh:#224687;
+$shadow:2px 2px 1px grey;
+$mau_xanh_nhat:#2ABFD4;
+$mau_vang:#FFC000;
+$mau_vang_nhat:#D8FF09;
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;font-family: medium-content-sans-serif-font,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+}
+.header{
+    background-color: $mau_vang_nhat;
+    padding: 10px;
+    a{
+        text-decoration: none;
+        overflow: hidden;
+        img{
+            float: left;
+        }
+        p{
+            display: inline-block;
+            font-size: 20px;
+            margin-top: 13px;
+            margin-left:5px;
+            height: 18px;
+        }
+    }
+}
+.nav{
+    width: 80%;
+    margin: 20px auto;
+    background-color: $mau_xanh_nhat;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    button{
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 1s;
+        font-size: 17px;
+        color:white;
+    } 
+    #hoso{
+        background-color: $mau_xanh;
+    }
+    button:hover{
+        background-color: $mau_xanh !important;
+        opacity: 0.7;
+    }
+  }
+.main{
+    padding: 50px;
+    .profile{
+        animation: changetabs 1s;
+        width: 80%;
+        margin : 0 auto;
+        .info_profile{
+            form{
+                table{
+                    margin-bottom: 50px;
+                    input[type=text]{
+                        font-size: 20px;
+                        padding: 10px;
+                        border:none;
+                        outline: none;
+                    }
+                    #field_profile{
+                        font-size: 20px;
+                        font-weight: 500;
+                        width: 200px;
+                    }
+                }
+                button[type=button]{
+                    border-radius: 4px;
+                    height: 40px;
+                    width:100px;
+                    background-color:$mau_xanh_nhat;
+                    outline: none;
+                    color:white;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .list-essay{
+        animation: changetabs 1s;
+        display: none;
+    }
+    .list-question{
+        animation: changetabs 1s;
+        display: none;
+    }
+}
+@keyframes changetabs {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }

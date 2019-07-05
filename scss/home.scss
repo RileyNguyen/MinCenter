@@ -1,0 +1,225 @@
+$mau_xanh:#224687;
+$shadow:2px 2px 1px grey;
+$mau_xanh_nhat:#2ABFD4;
+$mau_vang:#FFC000;
+$mau_vang_nhat:#D8FF09;
+*{
+    box-sizing: border-box;
+}
+.header{
+    background-image:  url('../image/home/header-home.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+.content{
+    width: 100%;
+    height: 500px;
+    z-index: 1;
+}
+@mixin search($border-radius,$height,$outline,$border,$display) {
+    border-radius: $border-radius;
+    height: $height;
+    outline: $outline;
+    border:$border;
+    display: $display;
+}
+.search {
+    width: 60%;
+    margin: 120px auto;
+    overflow: hidden;
+    input[type=search]{
+        @include search(10px, 50px, none, none, inline-block);
+        width: 90%;
+        box-shadow:$shadow; 
+        padding-left: 20px;
+        font-size: 20px;
+        word-spacing: 3px;
+    }
+    input[type=search]:focus{
+        animation-name: search_animation;
+        animation-duration: 2s; 
+    }
+    form{
+        display: flex;
+    }
+    button{
+        @include search(10px, 50px, none, none, inline-block);
+        width:7%;
+        box-shadow:$shadow;
+        margin-left: 5px;
+    }
+    button:hover{
+        background-color: $mau_xanh_nhat;
+    }
+    .slogan{
+        margin-top:30px;
+        font-size: 25px;
+        text-align: center;
+        color: yellow;
+    }
+}
+.main{
+}
+@mixin info($width,$height,$border-radius,$text-align) {
+    width:$width;
+    height: $height;
+    border-radius: $border-radius;
+    text-align: $text-align;
+}
+.info{
+    margin-top:-70px;
+    display: flex;
+    z-index: 2;
+    text-align: center;
+    height: 500px;
+    .big-circle-blue{
+        background-color: $mau_xanh_nhat;
+        @include info(250px, 250px, 50%, center);
+        padding: 15px;
+        margin: 0 auto;
+        .small-circle-blue{
+            border: 15px solid $mau_xanh;
+            @include info(220px, 220px, 50%, center);
+            padding: 25px;
+        }
+    }
+    .big-circle-yellow{
+        background-color: $mau_vang;
+        @include info(250px, 250px, 50%, center);
+        padding: 15px;
+        margin: 0 auto;
+        .small-circle-yellow{
+            border: 15px solid $mau_vang_nhat;
+            @include info(220px, 220px, 50%, center);
+            padding:25px;
+        }
+    }
+}
+.info .detail-info{
+    flex-wrap: nowrap;
+    width: 20%;
+    margin:-50px auto;
+    .detail{
+        h2{
+            font-weight: bold;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+}
+
+.library{
+    background-color: $mau_vang;
+    .highlights{
+        width: 100%;
+        padding: 30px 30px 0 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .category{
+            padding: 20px;
+            margin-bottom: 50px;
+            background-color: white;
+            width: 45%;
+            height: 210px;
+            box-shadow: 0 0 10px -2px #000000;
+            border-radius: 2px;
+            overflow: hidden;
+            .language{
+                padding-left: 3%;
+                margin-top: 20px;
+                display: flex;
+                flex-wrap: nowrap;
+                .each{
+                    width: 16%;
+                    a{
+                        overflow: hidden;
+                    }
+                    a:hover{
+                        color: $mau_xanh_nhat;
+                    }
+                    img{
+                        width: 80px;
+                        height: 80px;
+                    }
+                    p{
+                       text-align: center;
+                    }
+                }
+            }
+            span{
+                vertical-align: center;
+                padding: 10px;
+                font-size: 20px;
+                img{
+                float: left;
+            }
+            }
+        }
+    }
+    a{
+        color: #000000;
+        text-decoration: none;
+    }
+    input[type=button]{
+        position: relative;
+        left:50%;
+        transform: translate(-50%,0);
+        margin : 0 auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px -2px #000000;
+        border : none;
+        width: 200px;
+        height: 30px;
+        margin-bottom: 20px;
+    }
+    input[type=button]:hover{
+        box-shadow: 0 0 10px -2px $mau_xanh_nhat;
+    }
+}
+.popular{
+    h2{
+        text-align: center;
+    }
+    hr{
+        border: 1px solid;
+    }
+    .top-teacher{
+        position: relative;
+        i img{
+            position: absolute;
+            width: 40px;
+            top:50%;
+            height: 40px;
+        }
+        display: flex;
+        .info-teacher{
+            padding:30px;
+            flex-wrap: nowrap;
+            width: 24%;
+            .avatar{
+                border-radius: 50%;
+                height: 150px;
+                width: 150px;
+                margin: 0 auto;
+                border:none;
+            }
+            .name-teacher{
+                text-align: center;
+            }
+            .force li{
+                margin-left: 30px;
+            }
+        }
+    }
+}
+@keyframes search_animation{
+    from{
+        box-shadow:$shadow; 
+    }
+    to{
+        box-shadow:3px 3px 1px $mau_xanh;
+    }
+}

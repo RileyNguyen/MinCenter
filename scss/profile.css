@@ -1,0 +1,190 @@
+body {margin: 0;padding: 0;background:rgba(0,0,0,0.2);}
+* {-webkit-box-sizing: border-box;box-sizing: border-box;font-family: medium-content-sans-serif-font,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;}
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+.header { background-color: #D8FF09;padding: 10px;}
+.header a {text-decoration: none;overflow: hidden;}
+.header a img {float: left;}
+.header a p {display: inline-block;font-size: 20px;margin-top: 13px;margin-left: 5px;height: 18px;}
+.content_tab_baigiang label,span{display: inline-block;/* width:20%; */margin:10px;}
+.content_tab_baigiang select{display: inline-block;width:20%;height: 30px;border-radius: 5px;padding-left: 10px;}
+.content_tab_baigiang input[type=text]{border-radius: 5px;margin-bottom:10px;outline: none;height: 30px;width: 50%;}
+.content_tab_baigiang input[type=submit]{width: 45px;margin-right:10px;float: right;border-radius: 5px;outline: none;cursor:pointer;border: none;box-shadow: 0 2px 7px 2px rgba(0,0,0,0.7);height: 30px;}
+.content_tab_baigiang input[type=submit]:hover{background-color: tomato;}
+.content_tab_baigiang #add{float: none;margin-top: 20px;margin-left: 10px;}
+.content_tab_baigiang button[type=reset]{width: 70px;height: 30px;border-radius: 5px;outline: none;cursor:pointer;border: none;box-shadow: 0 2px 7px 2px rgba(0,0,0,0.7);}
+.content_tab_baigiang button[type=reset]:hover{background-color: tomato;}
+a.chucnang{display: inline-block;width: 40px;height: 25px;border:1px solid black;padding-left: 5px;border-radius: 5px; color:black}
+a.chucnang:hover{box-shadow: 0px 2px 5px 3px rgba(0,0,0,0.7);}
+.nav {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #2ABFD4;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+.nav button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  font-size: 17px;
+  color: white;
+}
+
+.nav #soanbaigiang {
+  background-color: #224687;
+}
+
+.nav button:hover {
+  background-color: #224687 !important;
+  opacity: 0.7;
+}
+
+.main {padding: 50px 0;width: 100%;}
+td{text-align: center;}
+#dsbaigiang{/* margin-left: 70px; */}
+/*.main .inner .profile {
+  -webkit-animation: changetabs 1s;
+  animation: changetabs 1s;
+  margin: 0 auto;
+}
+
+.main .inner .profile .info_profile form table {
+  margin-bottom: 50px;
+}
+
+.main .inner .profile .info_profile form table input[type=text] {
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.main .inner .profile .info_profile form table #field_profile {
+  font-size: 20px;
+  font-weight: 500;
+  width: 200px;
+}
+
+.main .inner .profile .info_profile form button[type=button] {
+  border-radius: 4px;
+  height: 40px;
+  width: 100px;
+  background-color: #2ABFD4;
+  outline: none;
+  color: white;
+  font-weight: bold;
+}
+
+.main .inner .list-essay {
+  -webkit-animation: changetabs 1s;
+          animation: changetabs 1s;
+  display: none;
+}
+
+.main .inner .list-question {
+  -webkit-animation: changetabs 1s;
+          animation: changetabs 1s;
+  display: none;
+}
+.main .inner .create-ques{
+  -webkit-animation: changetabs 1s;
+          animation: changetabs 1s;
+  display: none;
+}*/
+.main .content_tab_baigiang .info_profile form{padding:0 75px;}
+.inner{width: 1200px;margin:0 auto;position: relative;}
+.clear{display: block;clear: both;}
+.box_baigiang_admin{width: 100%;border-bottom: 1px solid;}
+/* .stt_bg{width: 40px;float: left;}
+.name_bg{width: 200px;float: left;border-right: 1px solid;border-left: 1px solid;padding-left: 10px;}
+.mota_bg{width: 200px;float: left;border-right: 1px solid;padding-left: 10px;border-left: 1px solid;}
+.noidung_bg{width: 640px;float: left;border-right: 1px solid;padding-left: 10px;border-left: 1px solid;}
+.chucnang{width: 30px;float: left;}
+.stt{width: 40px;float: left;}
+.tenbg{width: 200px;float: left;}
+.motabg{width: 200px;float: left;}
+.noidung{width: 640px;float: left;}
+.chucnang{width: 60px;float: right;} */
+.box_baigiang_admin:last-child{border-bottom: none;}
+.box_cauhoi_admin span{display: block;width: 100%;text-align: center;}
+/*tab_baigiang_index*/
+.item_tab_baigiang{display:inline-block;padding: 0px 10px;color:#000;font-weight:bold;font-size: 12px;text-transform:capitalize;position:relative;border: 2px solid #e9e6be;border-radius: 25px;margin-right: 10px;}
+.item_tab_baigiang:hover,.item_tab_baigiang.active{background:#fff;border: 2px solid #2A3F54;padding: 0px 10px;color: #2A3F54;font-size: 13px;}
+.content_tab_baigiang{display:none;word-wrap: break-word;
+  -webkit-animation: changetabs 1s;
+          animation: changetabs 1s;}
+.content_tab_baigiang.active{display:block;}
+.tab_baigiang{
+  float: left;
+  padding: 5px 0;
+  margin-bottom: 10px;
+  -webkit-animation: changetabs 1s;
+  animation: changetabs 1s;
+  }
+ .box_cauhoi_admin span{display: block;width: 100%;text-align: center;}
+.tab_baigiang a h2{border-bottom:none; }
+/*trắc nghiệm*/
+.stt_bg{width: 40px;}
+.name_ch{width: 300px;}
+.cau_hoi{width: 200px}
+.dapan_ch{width: 100px}
+.chuc_nang{width: 150px;}
+.name_bg{width: 200px;}
+.mota_bg{width: 200px;}
+.noidung_bg{width: 640px;}
+.left_gv{width: 50%;float: left;}
+.right_gv{width: 50%;float: right;text-align: right;padding: 15px 0;}
+td{word-wrap: break-word;}
+td.chucnang{width: 150px;}
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+/*# sourceMappingURL=profile.css.map */
+@-webkit-keyframes changetabs {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes changetabs {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media all and (max-width: 600px){
+  .content_tab_baigiang{padding:10px;}
+  .content_tab_baigiang label,span{display: inline-block;width:30%;margin:10px;}
+  .inner{margin-top:-60px;padding: 20px;width: 100%;}
+  .tab_baigiang::before{content: "Vui lòng đăng nhập bằng máy tính để có thể dễ dàng quản lý câu hỏi và bài giảng!";font-size: 15px;text-align: center;margin-bottom: 10px;display: block;color:red;}
+  .tab_baigiang a{display: block;width: 100%;}
+  #ds_tracnghiem span{text-align:center;width: 100%;}
+  .stt_bg{width: 5%;font-size: 12px;text-align: center;}
+  .tenbg{width: 25%;text-align: center;}
+  .motabg{width: 25%;text-align: center;}
+  .noidung{width: 40%;text-align: center;}
+  .chucnang{display: none}
+  .name_ch{width: 20%;font-size: 13px;}
+  .cau_hoi{width:20%;font-size: 13px;}
+  .dapan_ch{width: 40px;font-size: 13px;}
+  .chuc_nang{display: none;}
+  #select{width: 150px;}
+  .ck_editor1{width: 80%;}
+  .main .content_tab_baigiang .info_profile form{padding:0 10px;}
+}

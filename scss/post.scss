@@ -1,0 +1,84 @@
+$mau_trang_nav : rgba(255,255,255,0.8);
+$mau_den:black;
+$mau_ca_chua: tomato;
+$mau_vang:#FFC000;
+$mau_vang_nhat:#D8FF09;
+$mau_xanh:#224687;
+$mau_xanh_nhat:#2ABFD4;
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.main{
+    padding-top:100px; 
+    width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
+    .left{
+        float: left;
+        width: 50%;
+        padding: 10px;
+        input[type=image]{
+            width: 70%;
+            height: 200px;
+        }
+        input[type=text]{
+            display: block;
+            width: 100%;
+            margin-bottom: 30px;
+            border: none;
+            border-bottom: 1px solid rgb(175, 173, 173);
+        }
+    }
+    .right{
+        float: left;
+        width: 50%;
+        padding: 30px;
+        p{
+            color:red;
+            margin-bottom:20px;
+        }
+        input[type=text]{
+            display: block;
+            width: 100%;
+            border:none;
+            height: 40px;
+            font-size: 25px;
+            border-bottom: 1px solid rgb(175, 173, 173);
+            margin-bottom:20px;
+        }
+        input[type=checkbox]{
+            margin-bottom:50px;
+        }
+        span a{
+            color:red;
+            text-decoration: none;
+        }
+        button[type=submit]{
+            width: 40%;
+            height: 35px;
+            margin-right:20px;
+            background-color: $mau_xanh_nhat;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold; 
+            font-size: 25px;
+        }
+        button[type=submit]:hover{
+            box-shadow: 0 0 5px 2px gray;
+        }
+        a.later{
+            text-decoration: none;
+            color:gray;
+            font-size : 20px;
+            font-weight: bold;
+        }
+        a.later:hover{
+            text-shadow: 1px 1px gray;
+        }
+    }
+}

@@ -1,0 +1,228 @@
+$mau_trang_nav : rgba(255,255,255,0.8);
+$mau_den:black;
+$mau_ca_chua: tomato;
+$mau_vang:#FFC000;
+$mau_vang_nhat:#D8FF09;
+$mau_xanh:#224687;
+$mau_xanh_nhat:#2ABFD4;
+body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav{
+    background-color:$mau_trang_nav ;
+    overflow: hidden;
+}
+.nav a{
+    float: left;
+}
+.nav ul{
+    position: absolute;
+    right: 50px;
+    margin: 50px 0;
+}
+.nav ul li a{
+    text-decoration: none;
+    color:$mau_den;
+}
+.nav ul li a:hover{
+    color: $mau_ca_chua;
+    animation-name: menu;
+    animation-duration: 2s;
+}
+.nav ul li {
+    list-style: none;
+    display: inline-block;
+    font-weight: bold;
+    font-size:25px;
+    margin-left: 25px;
+}
+.overlay{
+    display: none;
+	width: 100vw;
+	height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    .login-wrapper{
+        background-color: $mau_vang_nhat;
+        width: 40vw;
+        height: 60vh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        position: fixed;
+        position: relative;
+        .login-content{
+            padding : 3vh;
+            h3{
+                font-size : 30px;
+            }
+            .close{
+                position: absolute;
+                top :-10px ;
+                right: 0;
+                font-size: 30px;
+                text-decoration: none;
+            }
+            .close:hover{
+                color:red;
+            }
+            label{
+                display: block;
+                margin:20px 0 20px 0;
+                input[type=text],input[type=password]{
+                    padding: 5px;
+                    width: 80%;
+                    height: 40px;
+                    border-radius: 5px;
+                    border:none;
+                }
+            }
+            button[type=submit]{
+                margin: 0 auto;
+                width: 150px;
+                height: 40px;
+                background-color: $mau_xanh_nhat;
+                border:none;
+                border-radius: 5px;
+                font-weight: bold;
+                font-size: 20px;
+            }
+            button[type=submit]:hover{
+                box-shadow: 0px -1px 9px 0px rgba(0,0,0,0.75);
+            }
+        }
+    }
+    .register-wrapper{
+        background-color: $mau_xanh_nhat;
+        width: 40vw;
+        height: 80vh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        position: fixed;
+        position: relative;
+         .register-content{
+             padding : 3vh;
+             h3{
+                 font-size : 30px;
+             }
+             label{
+                 display: block;
+                 margin: 10px;
+                 input[type=text],input[type=password]{
+                    padding: 5px;
+                    width: 80%;
+                    height: 40px;
+                    border-radius: 5px;
+                    border:none;
+                 }
+             }
+             a{
+                 text-decoration: none;
+                 color : red;
+             }
+             button[type=submit]{
+                margin: 0 auto;
+                width: 150px;
+                height: 40px;
+                margin: 10px;
+                background-color: $mau_vang_nhat;
+                border:none;
+                border-radius: 5px;
+                font-weight: bold;
+                font-size: 20px;
+            }
+            button[type=submit]:hover{
+                box-shadow: 0px -1px 9px 0px rgba(0,0,0,0.75);
+            }
+            .close-register{
+                position: absolute;
+                top :-10px ;
+                right: 0;
+                font-size: 30px;
+                text-decoration: none;
+            }
+            .close-register:hover{
+                color:red;
+            }
+         }
+     }
+    z-index: 2s;
+}
+.footer{
+    .contact{
+        padding: 10px;
+        padding-left:30px;
+        background-color: $mau_xanh_nhat;
+        position: relative;
+        overflow: hidden;
+        a{
+            color: #000000;
+            font-size: 25px;
+            text-decoration: none;
+            display: inline-block;
+            float: left;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+        form input{
+            position: absolute;
+            height: 35px;
+            border:none;
+            color: red;
+            right: 30px;
+            justify-content: center;
+            padding: 10px;
+            margin-right: 10px;
+        }
+        form input[type=text]{
+            width: 500px;
+        }
+    }
+    .wrapper{
+        display: flex;
+        flex-wrap: nowrap;
+        .part{
+            width: 25%;
+            padding: 20px;
+            font-size: 20px;
+            a{
+                text-decoration: none;
+                color: #000000;
+            }
+            a:hover{
+                color: tomato;
+            }
+            ul{
+                list-style: none;
+            }
+        }
+    }
+    clear: both;
+    hr{
+        border:1px solid gray;
+    }
+    .infomation {
+        padding-left: 50px;
+        td{
+            padding-left: 30px;
+            width: 320px;
+        }
+    }
+}
+@keyframes menu{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
